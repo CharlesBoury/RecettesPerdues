@@ -19,9 +19,6 @@ public class power_picker : MonoBehaviour
 		this.origin_rotation = transform.localRotation;
 		this.min = this.origin + new Vector3(-GetComponent<SpriteRenderer>().size.x * 5, 0, 0);
 		this.max = this.origin + new Vector3(GetComponent<SpriteRenderer>().size.x * 5, GetComponent<SpriteRenderer>().size.y * 5, 0);
-		Debug.Log("Origin: " + this.origin);
-		Debug.Log("Min: " + this.min);
-		Debug.Log("Max: " + this.max);
 		
 	}
 
