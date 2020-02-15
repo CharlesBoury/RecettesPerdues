@@ -425,17 +425,17 @@ PrefabInstance:
         type: 3}
       propertyPath: lstIngredients.Array.data[0].ingredient
       value: 
-      objectReference: {fileID: 222108738}
+      objectReference: {fileID: 1719156032}
     - target: {fileID: 3090609183433764256, guid: 407955d333f0e0a8983280aad0a3baf8,
         type: 3}
       propertyPath: lstIngredients.Array.data[1].ingredient
       value: 
-      objectReference: {fileID: 1679958781}
+      objectReference: {fileID: 1447675938}
     - target: {fileID: 3090609183433764256, guid: 407955d333f0e0a8983280aad0a3baf8,
         type: 3}
       propertyPath: lstIngredients.Array.data[2].ingredient
       value: 
-      objectReference: {fileID: 1719156032}
+      objectReference: {fileID: 222108738}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
 --- !u!1 &519420028
@@ -635,6 +635,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.000000029802
       objectReference: {fileID: 0}
+    - target: {fileID: 8392960257419864357, guid: 7134975548af74440b0dbfbaa02f93c0,
+        type: 3}
+      propertyPath: casserole
+      value: 
+      objectReference: {fileID: 1545155084}
     - target: {fileID: 8392960257419864358, guid: 7134975548af74440b0dbfbaa02f93c0,
         type: 3}
       propertyPath: m_Name
@@ -992,6 +997,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Brocoli
       objectReference: {fileID: 0}
+    - target: {fileID: 4706027226129855378, guid: 93639ffca7908b643ac48a21782a64b7,
+        type: 3}
+      propertyPath: casserole
+      value: 
+      objectReference: {fileID: 1545155084}
     - target: {fileID: 7909672584846827481, guid: 93639ffca7908b643ac48a21782a64b7,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -1009,6 +1019,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93639ffca7908b643ac48a21782a64b7, type: 3}
+--- !u!1 &1447675938 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9157575678877190539, guid: 8253ae0e1751541e5a54e31d82a9c681,
+    type: 3}
+  m_PrefabInstance: {fileID: 949714341090379139}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1512888217
 GameObject:
   m_ObjectHideFlags: 0
@@ -1495,12 +1511,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 93ba09894017da34bb7e256f909735ae, type: 3}
---- !u!1 &1679958781 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 4711100630420521272, guid: 4179a6ea120594432af9b7d6d4e1a141,
-    type: 3}
-  m_PrefabInstance: {fileID: 3930035846071846881}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1719156032 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4416350617811690716, guid: 8f97aea68e46942c987294430667613d,
@@ -1534,6 +1544,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7998754313178740484, guid: 4dcae5f28becffc4b937248284100316,
+        type: 3}
+      propertyPath: casserole
+      value: 
+      objectReference: {fileID: 1545155084}
     - target: {fileID: 7998754313178740486, guid: 4dcae5f28becffc4b937248284100316,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1896,6 +1911,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.86686
       objectReference: {fileID: 0}
+    - target: {fileID: 2986588651111761867, guid: c986eb42c067cba45836a72ef938f21e,
+        type: 3}
+      propertyPath: casserole
+      value: 
+      objectReference: {fileID: 1545155084}
     - target: {fileID: 3877195306668241449, guid: c986eb42c067cba45836a72ef938f21e,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -2731,6 +2751,11 @@ PrefabInstance:
       propertyPath: m_LocalScale.z
       value: 0.5151778
       objectReference: {fileID: 0}
+    - target: {fileID: 8437407985940869213, guid: 441e989fa6cebe342a6e5c784fa6ac6b,
+        type: 3}
+      propertyPath: casserole
+      value: 
+      objectReference: {fileID: 1545155084}
     - target: {fileID: 8437407985940869214, guid: 441e989fa6cebe342a6e5c784fa6ac6b,
         type: 3}
       propertyPath: m_Name

@@ -16,10 +16,10 @@ public class chaud : MonoBehaviour
     {
       if (draggable.inCasserole) {
           if (power_picker.fire_power > 0.9) {
-            transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = true;
+            transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = true;
           }
           else {
-            transform.GetChild(0).GetComponent<SpriteRenderer>().enabled = false;
+            transform.GetChild(1).GetComponent<SpriteRenderer>().enabled = false;
           }
       }
 
