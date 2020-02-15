@@ -7,7 +7,7 @@ public class power_picker : MonoBehaviour
 {
     private bool			isHeld = false;
     private Vector3			offset;
-	public static double	fire_power = 5;
+	public static double	fire_power = 0.5;
 	private Vector3			origin;
 	private Vector3			max;
 	private Vector3			min;
@@ -19,7 +19,7 @@ public class power_picker : MonoBehaviour
 		this.origin_rotation = transform.localRotation;
 		this.min = this.origin + new Vector3(-GetComponent<SpriteRenderer>().size.x * 7, 0, 0);
 		this.max = this.origin + new Vector3(GetComponent<SpriteRenderer>().size.x * 7, GetComponent<SpriteRenderer>().size.y * 5, 0);
-		
+
 	}
 
     private Vector3 getWorldMouse()

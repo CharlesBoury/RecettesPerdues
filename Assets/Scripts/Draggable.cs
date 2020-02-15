@@ -7,6 +7,7 @@ public class Draggable : MonoBehaviour
     public Animator animator;
     public GameObject casserole;
 	  bool       isHeld = false;
+    public bool       inCasserole = false;
     Vector3     offset;
 
     private Vector3 getWorldMouse()
@@ -32,9 +33,10 @@ public class Draggable : MonoBehaviour
             animator.SetBool("Content", false);
 
             // Check if in casserole
-            if (this.GetComponent<Collider2D>().IsTouching(casserole.GetComponent<Collider2D>())) {
+            if (transform.GetChild(0).GetComponent<Collider2D>().IsTouching(casserole.GetComponent<Collider2D>())) {
                 this.gameObject.transform.parent = casserole.transform.GetChild(0);
                 this.GetComponent<Collider2D>().enabled = false;
+                inCasserole = true;
             }
 
         }
