@@ -55,7 +55,7 @@ public class power_picker : MonoBehaviour
         		transform.localPosition.y, 0);
         	transform.localPosition = new Vector3(
         		transform.localPosition.x,
-        		origin.y + Mathf.Abs(transform.localPosition.x - origin.x), 0);
+        		origin.y - Mathf.Cos(Mathf.Abs(transform.localPosition.x - origin.x)) + Mathf.Cos(0), 0);
         	transform.localEulerAngles = new Vector3(0, 0, (transform.localPosition.x - origin.x) * 100);
         	fire_power = transform.localPosition.x - origin.x;
         	//Mathf.Clamp(this.gameObject.transform.localPosition.y, this.min.y, this.max.y),
