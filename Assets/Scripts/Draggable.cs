@@ -5,7 +5,8 @@ using UnityEngine;
 public class Draggable : MonoBehaviour
 {
     public Animator animator;
-	bool       isHeld = false;
+    public GameObject casserole;
+	  bool       isHeld = false;
     Vector3     offset;
 
     private Vector3 getWorldMouse()
@@ -20,15 +21,22 @@ public class Draggable : MonoBehaviour
     private void OnMouseDown() {
     	if (Input.GetMouseButtonDown(0)) {
             Vector3 mouseWorldPos = getWorldMouse();
-    		isHeld = true;
+    		    isHeld = true;
             offset = this.gameObject.transform.localPosition - mouseWorldPos;
             animator.SetBool("Content", true);
         }
     }
     private void OnMouseUp() {
     	if (Input.GetMouseButtonUp(0)) {
-    		isHeld = false;
+    		    isHeld = false;
             animator.SetBool("Content", false);
+
+            // Check if in casserole
+            if (this.GetComponent<Collider2D>().IsTouching(casserole.GetComponent<Collider2D>())) {
+                this.gameObject.transform.parent = casserole.transform.GetChild(0);
+                this.GetComponent<Collider2D>().enabled = false;
+            }
+
         }
     }
 

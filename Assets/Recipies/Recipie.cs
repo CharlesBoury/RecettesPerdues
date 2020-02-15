@@ -2,10 +2,6 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum Ingredient{
-   ail, oignon, sel, poivre
-};
-
 public enum State{
   normal, brule, touille
 };
@@ -13,7 +9,7 @@ public enum State{
 [System.Serializable]
 public class IngredientState
 {
-    public Ingredient ingredient;
+    public GameObject ingredient;
     public State state;
 }
 
