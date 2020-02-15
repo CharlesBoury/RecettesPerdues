@@ -44,6 +44,7 @@ public class gameState : MonoBehaviour
         GameObject instance = Instantiate(objet);
         instance.transform.parent = ingredientsContainer.transform;
         instance.GetComponent<Draggable>().casserole = casserole;
+        instance.GetComponent<Cookable>().casserole = casserole;
         instance.name = objet.name;
       }
     }
