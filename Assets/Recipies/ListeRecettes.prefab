@@ -46,6 +46,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   activeRecipie: {fileID: 3090609183433764256}
   readyButton: {fileID: 0}
+  casserole: {fileID: 0}
 --- !u!1 &3090609183433764259
 GameObject:
   m_ObjectHideFlags: 0
@@ -91,4 +92,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Title: Zob de chameau farci
   Description: 
-  lstIngredients: []
+  lstIngredients:
+  - ingredient: {fileID: 0}
+    state: 0
+  - ingredient: {fileID: 0}
+    state: 0
+  - ingredient: {fileID: 0}
+    state: 0
