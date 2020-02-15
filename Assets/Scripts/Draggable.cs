@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
-    public Animator animator;
-    public GameObject casserole;
-	  bool       isHeld = false;
-    public bool       inCasserole = false;
-    Vector3     offset;
+    public Animator     animator;
+    public GameObject   casserole;
+	bool                isHeld = false;
+    public bool         inCasserole = false;
+    Vector3             offset;
 
     private Vector3 getWorldMouse()
     {
