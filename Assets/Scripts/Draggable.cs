@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
+    public Animator animator;
 	bool       isHeld = false;
     Vector3     offset;
 
@@ -21,12 +22,14 @@ public class Draggable : MonoBehaviour
             Vector3 mouseWorldPos = getWorldMouse();
     		isHeld = true;
             offset = this.gameObject.transform.localPosition - mouseWorldPos;
-    	}
+            animator.SetBool("Content", true);
+        }
     }
     private void OnMouseUp() {
     	if (Input.GetMouseButtonUp(0)) {
     		isHeld = false;
-    	}
+            animator.SetBool("Content", false);
+        }
     }
 
     // Update is called once per frame
