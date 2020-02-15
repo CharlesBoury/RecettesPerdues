@@ -17,8 +17,8 @@ public class power_picker : MonoBehaviour
 	{
 		this.origin = this.transform.localPosition;
 		this.origin_rotation = transform.localRotation;
-		this.min = this.origin + new Vector3(-GetComponent<SpriteRenderer>().size.x * 5, 0, 0);
-		this.max = this.origin + new Vector3(GetComponent<SpriteRenderer>().size.x * 5, GetComponent<SpriteRenderer>().size.y * 5, 0);
+		this.min = this.origin + new Vector3(-GetComponent<SpriteRenderer>().size.x * 7, 0, 0);
+		this.max = this.origin + new Vector3(GetComponent<SpriteRenderer>().size.x * 7, GetComponent<SpriteRenderer>().size.y * 5, 0);
 		
 	}
 
@@ -55,9 +55,11 @@ public class power_picker : MonoBehaviour
         		transform.localPosition.y, 0);
         	transform.localPosition = new Vector3(
         		transform.localPosition.x,
-        		origin.y - Mathf.Cos(Mathf.Abs(transform.localPosition.x - origin.x)) + Mathf.Cos(0), 0);
-        	transform.localEulerAngles = new Vector3(0, 0, (transform.localPosition.x - origin.x) * 100);
-        	fire_power = transform.localPosition.x - origin.x;
+        		origin.y - Mathf.Cos(Mathf.Abs(transform.localPosition.x - origin.x) * 0.65f) + Mathf.Cos(0), 0);
+        	transform.localEulerAngles = new Vector3(0, 0, (transform.localPosition.x - origin.x) * 25);
+        	fire_power = (transform.localPosition.x - origin.x) / (max.x - min.x) + 0.5;
+
+            //Debug.Log("Puissance: " + fire_power);
         	//Mathf.Clamp(this.gameObject.transform.localPosition.y, this.min.y, this.max.y),
         	//	0);
         	//Debug.Log("New pos = " + transform.localPosition);
