@@ -1,0 +1,59 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &4627678163257253628
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4627678163257253630}
+  - component: {fileID: 4627678163257253631}
+  m_Layer: 0
+  m_Name: GameState
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4627678163257253630
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627678163257253628}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -0.12588416, y: -0.061903078, z: -1.5097656}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &4627678163257253631
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4627678163257253628}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de1a06c81df144a80a4a9c9706736c46, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  state: 0
+  ingredients:
+  - {fileID: 9157575678877190539, guid: 8253ae0e1751541e5a54e31d82a9c681, type: 3}
+  - {fileID: 4416350617811690716, guid: 8f97aea68e46942c987294430667613d, type: 3}
+  - {fileID: 4711100630420521272, guid: 4179a6ea120594432af9b7d6d4e1a141, type: 3}
+  - {fileID: 8437407985940869214, guid: 441e989fa6cebe342a6e5c784fa6ac6b, type: 3}
+  - {fileID: 4706027226129855377, guid: 93639ffca7908b643ac48a21782a64b7, type: 3}
+  - {fileID: 7469422306146375205, guid: aba49189eac8d5846aeb5e80dc5d6dfe, type: 3}
+  - {fileID: 1250079531940740541, guid: 6869bfb115cba45baa697a4bb105ef91, type: 3}
+  - {fileID: 8392960257419864358, guid: 7134975548af74440b0dbfbaa02f93c0, type: 3}
+  - {fileID: 7998754313178740487, guid: 4dcae5f28becffc4b937248284100316, type: 3}
+  - {fileID: 2986588651111761864, guid: c986eb42c067cba45836a72ef938f21e, type: 3}
+  ingredientsContainer: {fileID: 0}
+  casserole: {fileID: 0}
