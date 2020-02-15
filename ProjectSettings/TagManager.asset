@@ -38,6 +38,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Ingredients
+    uniqueID: 1429907979
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Recette
+    uniqueID: 2447683277
     locked: 0
