@@ -9,6 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 3090609182943667929}
+  - component: {fileID: 1295019964}
   m_Layer: 5
   m_Name: ListeRecettes
   m_TagString: Untagged
@@ -31,6 +32,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1295019964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3090609182943667928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5f13b3fe094166a0b9e6e973b0abc12c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  activeRecipie: {fileID: 3090609183433764256}
+  readyButton: {fileID: 0}
 --- !u!1 &3090609183433764259
 GameObject:
   m_ObjectHideFlags: 0
