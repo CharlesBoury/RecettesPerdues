@@ -9,7 +9,7 @@ public enum State{
 [System.Serializable]
 public class IngredientState
 {
-    public GameObject ingredient;
+    public string ingredient;
     public State state;
 }
 

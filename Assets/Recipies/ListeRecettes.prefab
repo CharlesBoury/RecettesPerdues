@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &3090609182943667928
+--- !u!1 &3131678934547271326
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3090609182943667929}
-  - component: {fileID: 1295019964}
+  - component: {fileID: 3131678934360793667}
   m_Layer: 5
   m_Name: ListeRecettes
   m_TagString: Untagged
@@ -17,37 +16,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3090609182943667929
+--- !u!4 &3131678934360793667
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3090609182943667928}
+  m_GameObject: {fileID: 3131678934547271326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 3090609183433764257}
+  - {fileID: 3131678935024740710}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1295019964
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3090609182943667928}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5f13b3fe094166a0b9e6e973b0abc12c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  activeRecipie: {fileID: 3090609183433764256}
-  readyButton: {fileID: 0}
-  casserole: {fileID: 0}
---- !u!1 &3090609183433764259
+--- !u!1 &3131678935024740709
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,8 +39,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 3090609183433764257}
-  - component: {fileID: 3090609183433764256}
+  - component: {fileID: 3131678935024740710}
+  - component: {fileID: 3131678935024740711}
   m_Layer: 5
   m_Name: Recette1
   m_TagString: Untagged
@@ -64,27 +48,27 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &3090609183433764257
+--- !u!4 &3131678935024740710
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3090609183433764259}
+  m_GameObject: {fileID: 3131678935024740709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 3090609182943667929}
+  m_Father: {fileID: 3131678934360793667}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &3090609183433764256
+--- !u!114 &3131678935024740711
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3090609183433764259}
+  m_GameObject: {fileID: 3131678935024740709}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f355138b52c09a909b249346f5e0211c, type: 3}
@@ -93,9 +77,9 @@ MonoBehaviour:
   Title: Zob de chameau farci
   Description: 
   lstIngredients:
-  - ingredient: {fileID: 0}
+  - ingredient: Aubergine
     state: 0
-  - ingredient: {fileID: 0}
+  - ingredient: Ail
     state: 0
-  - ingredient: {fileID: 0}
+  - ingredient: Citron
     state: 0
