@@ -168,9 +168,9 @@ GameObject:
   m_Component:
   - component: {fileID: 5570420388803885429}
   - component: {fileID: 2003612883637218460}
-  - component: {fileID: 7447946411601086708}
   - component: {fileID: 5988313643172048825}
   - component: {fileID: 1192712716819254095}
+  - component: {fileID: 3298773946679434184}
   m_Layer: 0
   m_Name: Condiment
   m_TagString: Untagged
@@ -205,28 +205,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 60ad659513df14002a2e5621f17b5ee9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 7447946411601086708}
-  casserole: {fileID: 0}
+  animator: {fileID: 0}
   inCasserole: 0
---- !u!95 &7447946411601086708
-Animator:
-  serializedVersion: 3
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5487500015114752984}
-  m_Enabled: 1
-  m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: cdbb88e996885b24b957a6e8738d6a29, type: 2}
-  m_CullingMode: 0
-  m_UpdateMode: 0
-  m_ApplyRootMotion: 0
-  m_LinearVelocityBlending: 0
-  m_WarningMessage: 
-  m_HasTransformHierarchy: 1
-  m_AllowConstantClipSamplingOptimization: 1
-  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!50 &5988313643172048825
 Rigidbody2D:
   serializedVersion: 4
@@ -270,3 +250,15 @@ CompositeCollider2D:
     m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
+--- !u!114 &3298773946679434184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5487500015114752984}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ab7f3a621e775d409059e413cefc374, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
