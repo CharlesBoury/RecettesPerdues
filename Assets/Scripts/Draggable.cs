@@ -4,11 +4,23 @@ using UnityEngine;
 
 public class Draggable : MonoBehaviour
 {
-	bool isHeld = false;
+	bool       isHeld = false;
+    Vector3     offset;
+
+    private Vector3 getWorldMouse()
+    {
+        Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+        return  new Vector3(
+                mouseWorldPos.x,
+                mouseWorldPos.y,
+                0);
+    }
     // Start is called before the first frame update
     private void OnMouseDown() {
     	if (Input.GetMouseButtonDown(0)) {
+            Vector3 mouseWorldPos = getWorldMouse();
     		isHeld = true;
+            offset = this.gameObject.transform.localPosition - mouseWorldPos;
     	}
     }
     private void OnMouseUp() {
@@ -21,13 +33,9 @@ public class Draggable : MonoBehaviour
     void Update()
     {
         if (isHeld) {
-        	Vector3 mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-        	mouseWorldPos = new Vector3(
-        		mouseWorldPos.x, 
-        		mouseWorldPos.y, 
-        		0);
+        	Vector3 mouseWorldPos = getWorldMouse();
 
-        	this.gameObject.transform.localPosition = mouseWorldPos;
+        	this.gameObject.transform.localPosition = new Vector3(mouseWorldPos.x + offset.x, mouseWorldPos.y +     offset.y, 0);
         }
     }
 }
