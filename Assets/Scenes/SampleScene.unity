@@ -722,7 +722,7 @@ GameObject:
   - component: {fileID: 683771701}
   - component: {fileID: 683771702}
   m_Layer: 0
-  m_Name: Solt3
+  m_Name: Slot3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1082,7 +1082,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1243369685}
   m_Layer: 0
-  m_Name: Solts
+  m_Name: Slots
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1116,7 +1116,7 @@ GameObject:
   - component: {fileID: 1316785098}
   - component: {fileID: 1316785099}
   m_Layer: 0
-  m_Name: Solt2
+  m_Name: Slot2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1241,7 +1241,7 @@ GameObject:
   - component: {fileID: 1479355046}
   - component: {fileID: 1479355047}
   m_Layer: 0
-  m_Name: Solt1
+  m_Name: Slot1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
