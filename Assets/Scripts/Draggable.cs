@@ -5,7 +5,6 @@ using UnityEngine;
 public class Draggable : MonoBehaviour
 {
     public Animator     animator;
-	  bool                isHeld = false;
 	bool                isHeld = false;
     public bool         inCasserole = false;
     Vector3             offset;
@@ -31,7 +30,7 @@ public class Draggable : MonoBehaviour
     	if (Input.GetMouseButtonUp(0)) {
     		    isHeld = false;
             animator.SetBool("Content", false);
-
+    
         }
     }
 
