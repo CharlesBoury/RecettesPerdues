@@ -55,13 +55,13 @@ MonoBehaviour:
   - ingredient: Brocoli
     bonus: 0
   - ingredient: Lait de coco
-    bonus: 4
+    bonus: 2
   - ingredient: Sel
     bonus: 0
   - ingredient: Poivre
     bonus: 0
   - ingredient: Citron
-    bonus: 4
+    bonus: 3
 --- !u!1 &824975559
 GameObject:
   m_ObjectHideFlags: 0
@@ -111,19 +111,19 @@ MonoBehaviour:
   - ingredient: Beurre
     bonus: 0
   - ingredient: Ail
-    bonus: 1
+    bonus: 3
   - ingredient: Menthe
     bonus: 0
   - ingredient: "Cr\xE8me"
     bonus: 0
   - ingredient: Soja
-    bonus: 4
+    bonus: 3
   - ingredient: Tomate
     bonus: 0
   - ingredient: Poivron
     bonus: 0
   - ingredient: Carotte
-    bonus: 4
+    bonus: 3
 --- !u!1 &3131678934547271326
 GameObject:
   m_ObjectHideFlags: 0
@@ -216,7 +216,7 @@ MonoBehaviour:
   - ingredient: Betterave
     bonus: 1
   - ingredient: Piment
-    bonus: 4
+    bonus: 3
   - ingredient: Sel
     bonus: 0
   - ingredient: Poivre
