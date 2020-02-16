@@ -1394,6 +1394,30 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1582567765}
     m_Modifications:
+    - target: {fileID: 479869340, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+      propertyPath: lstIngredients.Array.data[5].ingredient
+      value: Citron
+      objectReference: {fileID: 0}
+    - target: {fileID: 479869340, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+      propertyPath: lstIngredients.Array.data[6].ingredient
+      value: Citron
+      objectReference: {fileID: 0}
+    - target: {fileID: 479869340, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+      propertyPath: lstIngredients.Array.data[6].bonus
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 479869340, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+      propertyPath: lstIngredients.Array.data[5].bonus
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 824975561, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+      propertyPath: lstIngredients.Array.data[6].ingredient
+      value: Carotte
+      objectReference: {fileID: 0}
+    - target: {fileID: 824975561, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+      propertyPath: lstIngredients.Array.data[6].bonus
+      value: 3
+      objectReference: {fileID: 0}
     - target: {fileID: 3131678934360793667, guid: 407955d333f0e0a8983280aad0a3baf8,
         type: 3}
       propertyPath: m_LocalPosition.x
