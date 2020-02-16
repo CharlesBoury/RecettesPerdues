@@ -197,8 +197,8 @@ public class gameState : MonoBehaviour
     public void ImpactParticle(string name, int num) {
       //Debug.Log("name:"+name+num.ToString());
       switch(name) {
-        case "Sel": condiments.sel += num / 200.0f; break;
-        case "Poivre": condiments.poivre += num / 200.0f; break;
+        case "Sel": condiments.sel += num / 400.0f; break;
+        case "Poivre": condiments.poivre += num / 400.0f; break;
         case "Miel": condiments.miel += num / 20.0f; break;
         case "Crème": condiments.creme += num / 20.0f; break;
         case "Soja": condiments.soja += num / 30.0f; condiments.sel += num / 30.0f; break;
