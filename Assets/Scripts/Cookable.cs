@@ -31,6 +31,9 @@ public class Cookable : MonoBehaviour
                 inCasserole = true;
                 casserole.GetComponent<Casserole>().PlayBloup();
                 gameState.GetComponent<gameState>().UpdateAvancee();
+                this.GetComponent<Draggable>().enable = false;
+                transform.position = new Vector3(Random.Range(-1f, 1f), -0.25f, 0);
+                transform.GetChild(0).position = transform.position;
             }
 
         }

@@ -10,6 +10,7 @@ public class Draggable : MonoBehaviour
     Vector3             offset;
     Vector3             initialPosition;
     public bool         getBackToOrigin = false;
+    public bool         enable = true;
 
     void Start()
     {
@@ -26,7 +27,7 @@ public class Draggable : MonoBehaviour
     }
     // Start is called before the first frame update
     private void OnMouseDown() {
-    	if (Input.GetMouseButtonDown(0)) {
+    	if (Input.GetMouseButtonDown(0) && enable == true) {
             Vector3 mouseWorldPos = getWorldMouse();
     		    isHeld = true;
             offset = this.gameObject.transform.localPosition - mouseWorldPos;
@@ -52,7 +53,6 @@ public class Draggable : MonoBehaviour
     {
         if (isHeld) {
         	Vector3 mouseWorldPos = getWorldMouse();
-
         	this.gameObject.transform.localPosition = new Vector3(mouseWorldPos.x + offset.x, mouseWorldPos.y +     offset.y, 0);
         }
     }
