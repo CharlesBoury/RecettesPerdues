@@ -76,7 +76,8 @@ public class gameState : MonoBehaviour
       tropSale = false;
       ilmanqueqqchose = false;
       activeRecipie = lstRecipies[Random.Range(0, lstRecipies.Count)];
-      
+      panel.GetComponent<Image>().sprite = activeRecipie.sprite;
+
       if (state == State.pregame || state == State.endgame) {
         miamometerSlider.value = 0;
         miamometer.SetActive(false);
@@ -156,6 +157,7 @@ public class gameState : MonoBehaviour
     }
 
     float CondimentScore(Condiments condRef) {
+      Debug.Log("sel: " + condiments.sel.ToString() + " ref sel: " + condRef.sel.ToString());
       if (condiments.sel > 1.0f) condiments.sel = 1.0f;
       if (condiments.poivre > 1.0f) condiments.poivre = 1.0f;
       if (condiments.creme > 1.0f) condiments.creme = 1.0f;
@@ -163,12 +165,12 @@ public class gameState : MonoBehaviour
       if (condiments.soja > 1.0f) condiments.soja = 1.0f;
       if (condiments.coco > 1.0f) condiments.coco = 1.0f;
       if (condiments.sel > condRef.sel + 0.25) tropSale = true;
-      float selDiff = 4.0f * (condRef.sel - condiments.sel) * (condRef.sel - condiments.sel);
+      float selDiff = 2.0f * (condRef.sel - condiments.sel) * (condRef.sel - condiments.sel);
       float poivreDiff = Mathf.Abs(condRef.poivre - condiments.poivre);
-      float mielDiff = Mathf.Abs(condRef.miel - condiments.miel);
-      float sojaDiff = Mathf.Abs(condRef.soja - condiments.soja);
-      float cocoDiff = Mathf.Abs(condRef.coco - condiments.coco);
-      float huileDiff = Mathf.Abs(condRef.huile - condiments.huile);
+      float mielDiff = 0.0f; //Mathf.Abs(condRef.miel - condiments.miel);
+      float sojaDiff = 0.0f; //Mathf.Abs(condRef.soja - condiments.soja);
+      float cocoDiff = 0.0f; //Mathf.Abs(condRef.coco - condiments.coco);
+      float huileDiff = 0.0f; //Mathf.Abs(condRef.huile - condiments.huile);
       float diff = 1.0f - (selDiff + poivreDiff + mielDiff + sojaDiff + cocoDiff + huileDiff);
       if (diff < -0.1f) {
         diff = -0.1f;

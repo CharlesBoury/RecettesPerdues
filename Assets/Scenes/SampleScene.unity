@@ -431,6 +431,16 @@ PrefabInstance:
       propertyPath: gameState
       value: 
       objectReference: {fileID: 833153564}
+    - target: {fileID: 8235889156149143727, guid: 7831520be0744834a8209acc54ac9ae1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0.26
+      objectReference: {fileID: 0}
+    - target: {fileID: 8235889156149143727, guid: 7831520be0744834a8209acc54ac9ae1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -0.56
+      objectReference: {fileID: 0}
     - target: {fileID: 9094919198631860242, guid: 7831520be0744834a8209acc54ac9ae1,
         type: 3}
       propertyPath: m_LocalPosition.y
