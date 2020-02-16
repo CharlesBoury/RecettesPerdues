@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Casserole : MonoBehaviour
+public class PlaySong : MonoBehaviour
 {
 
 	public List<AudioClip> lstBloupsAudio;
@@ -13,10 +13,8 @@ public class Casserole : MonoBehaviour
 	}
 
 	public void PlayBloup() {
-		if (!audioSource.isPlaying)
-		{
-				audioSource.clip = lstBloupsAudio[Random.Range(0, lstBloupsAudio.Count)];
-				audioSource.Play();
-		}
+		int chosen = Random.Range(0, lstBloupsAudio.Count);
+		audioSource.clip = lstBloupsAudio[chosen];
+		audioSource.Play();
 	}
 }

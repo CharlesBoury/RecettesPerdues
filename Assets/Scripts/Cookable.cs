@@ -29,7 +29,7 @@ public class Cookable : MonoBehaviour
                 this.gameObject.transform.parent = slots;
                 this.GetComponent<Collider2D>().enabled = false;
                 inCasserole = true;
-                casserole.GetComponent<Casserole>().PlayBloup();
+                casserole.GetComponent<PlaySong>().PlayBloup();
                 gameState.GetComponent<gameState>().UpdateAvancee();
                 this.GetComponent<Draggable>().enable = false;
                 transform.position = new Vector3(Random.Range(-1f, 1f), -0.25f, 0);

@@ -107,6 +107,7 @@ public class gameState : MonoBehaviour
       DestroyGame();
       miamometer.SetActive(true);
       miamometerSlider.value = score;
+      miamometer.GetComponent<PlaySong>().PlayBloup();
       Button btn = miamometer.transform.GetChild(2).GetComponent<Button>();
   		btn.onClick.AddListener(InitiateGame);
 
