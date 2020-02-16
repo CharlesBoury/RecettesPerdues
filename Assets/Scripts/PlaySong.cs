@@ -8,8 +8,8 @@ public class PlaySong : MonoBehaviour
 	public List<AudioClip> lstBloupsAudio;
 	AudioSource audioSource;
 
-	void Start() {
-			audioSource = transform.GetComponent<AudioSource>();
+	void OnEnable() {
+		audioSource = GetComponent<AudioSource>();
 	}
 
 	public void PlayBloup() {
