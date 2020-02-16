@@ -116,7 +116,7 @@ PrefabInstance:
     - target: {fileID: 7009898039433946963, guid: 4625cf6ce1258784d8e76f09ff5c9770,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.size
-      value: 22
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7009898039433946963, guid: 4625cf6ce1258784d8e76f09ff5c9770,
         type: 3}
