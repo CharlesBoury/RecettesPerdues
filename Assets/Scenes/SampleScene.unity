@@ -774,6 +774,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1672512963}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1244446516 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3492204750263966381, guid: 33ccb56fd6a8eaf4cbd76e2905ee022e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1275858222}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1275858222
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1685,6 +1691,11 @@ PrefabInstance:
       propertyPath: avancee
       value: 
       objectReference: {fileID: 1759915660}
+    - target: {fileID: 4627678163257253631, guid: 2b799fe1f8db2d7798f0fcdccefa1761,
+        type: 3}
+      propertyPath: panel
+      value: 
+      objectReference: {fileID: 1244446516}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b799fe1f8db2d7798f0fcdccefa1761, type: 3}
 --- !u!1001 &2309475788987149676
