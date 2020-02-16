@@ -11,7 +11,7 @@ PrefabInstance:
         type: 3}
       propertyPath: audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: bbc122e6fc7faf3ae8e394bf772ca2e7, type: 3}
+      objectReference: {fileID: 8300000, guid: e292a20dd3d74cb4ebf35d83358252b4, type: 3}
     - target: {fileID: 3462331026679513214, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
