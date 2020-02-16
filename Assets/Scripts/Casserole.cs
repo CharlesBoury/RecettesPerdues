@@ -19,11 +19,4 @@ public class Casserole : MonoBehaviour
 				audioSource.Play();
 		}
 	}
-
-	private void OnTriggerEnter2D(Collider2D other) {
-		other.GetComponent<SpriteRenderer>().color = Color.blue;
-	}
-	private void OnTriggerExit2D(Collider2D other) {
-		other.GetComponent<SpriteRenderer>().color = Color.white;
-	}
 }
