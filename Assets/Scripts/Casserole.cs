@@ -9,7 +9,7 @@ public class Casserole : MonoBehaviour
 	AudioSource audioSource;
 
 	void Start() {
-			audioSource = transform.parent.GetComponent<AudioSource>();
+			audioSource = transform.GetComponent<AudioSource>();
 	}
 
 	public void PlayBloup() {
