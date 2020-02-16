@@ -20,7 +20,6 @@ public class ClampToAir : MonoBehaviour
         	transform.localPosition.x,
         	Mathf.Clamp(transform.localPosition.y, 3, 7),
         	0);
-        	Debug.Log("cc");
     	}
         
 
