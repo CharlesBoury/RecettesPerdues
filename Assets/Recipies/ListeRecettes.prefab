@@ -1,5 +1,129 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+--- !u!1 &479869338
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 479869339}
+  - component: {fileID: 479869340}
+  m_Layer: 5
+  m_Name: Recette2
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &479869339
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479869338}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3131678934360793667}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &479869340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 479869338}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f355138b52c09a909b249346f5e0211c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: Recette 2
+  Description: 
+  lstIngredients:
+  - ingredient: Ail
+    bonus: 0
+  - ingredient: Soja
+    bonus: 0
+  - ingredient: Poireau
+    bonus: 0
+  - ingredient: Brocoli
+    bonus: 0
+  - ingredient: Lait de coco
+    bonus: 4
+  - ingredient: Sel
+    bonus: 0
+  - ingredient: Poivre
+    bonus: 0
+  - ingredient: Citron
+    bonus: 4
+--- !u!1 &824975559
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 824975560}
+  - component: {fileID: 824975561}
+  m_Layer: 5
+  m_Name: Recette3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &824975560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824975559}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 3131678934360793667}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &824975561
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 824975559}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f355138b52c09a909b249346f5e0211c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Title: Recette 3
+  Description: 
+  lstIngredients:
+  - ingredient: Beurre
+    bonus: 0
+  - ingredient: Ail
+    bonus: 1
+  - ingredient: Menthe
+    bonus: 0
+  - ingredient: "Cr\xE8me"
+    bonus: 0
+  - ingredient: Soja
+    bonus: 4
+  - ingredient: Tomate
+    bonus: 0
+  - ingredient: Poivron
+    bonus: 0
+  - ingredient: Carotte
+    bonus: 4
 --- !u!1 &3131678934547271326
 GameObject:
   m_ObjectHideFlags: 0
@@ -28,6 +152,8 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 3131678935024740710}
+  - {fileID: 479869339}
+  - {fileID: 824975560}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -74,12 +200,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f355138b52c09a909b249346f5e0211c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Title: Zob de chameau farci
+  Title: Recette 1
   Description: 
   lstIngredients:
-  - ingredient: Aubergine
-    state: 0
+  - ingredient: Beurre
+    bonus: 0
   - ingredient: Ail
-    state: 0
+    bonus: 0
   - ingredient: Citron
-    state: 0
+    bonus: 1
+  - ingredient: Citrouille
+    bonus: 0
+  - ingredient: Blette
+    bonus: 0
+  - ingredient: Betterave
+    bonus: 1
+  - ingredient: Piment
+    bonus: 4
+  - ingredient: Sel
+    bonus: 0
+  - ingredient: Poivre
+    bonus: 0
