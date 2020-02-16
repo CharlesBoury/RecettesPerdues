@@ -20,6 +20,8 @@ public class gameState : MonoBehaviour
     public GameObject panel;
     public GameObject miamometer;
     public Condiments condiments;
+    public Vector3    avanceeOriginPos;
+    private int       avanceeCount;
 
     public List<GameObject> ingredients;
 
@@ -36,6 +38,7 @@ public class gameState : MonoBehaviour
       recetteImage = panel.transform.GetChild(1).gameObject;
       readyButton = panel.transform.GetChild(2).gameObject;
       mijoteButton = panel.transform.GetChild(3).gameObject;
+      avanceeOriginPos = avancee.transform.localPosition;
 
 
       Button btn = readyButton.GetComponent<Button>();
@@ -84,6 +87,8 @@ public class gameState : MonoBehaviour
           instance.name = objet.name;
         }
         state = State.game;
+        avancee.transform.localPosition = avanceeOriginPos;
+        avanceeCount = 0;
 
       }
     }
@@ -193,8 +198,12 @@ public class gameState : MonoBehaviour
     public void  UpdateAvancee()
     {
       //Debug.Log(panel.recetteImage.GetComponent<RectTransform>().Height.ToString());
-
-      avancee.transform.localPosition = new Vector3(avancee.transform.localPosition.x, avancee.transform.localPosition.y - 50, 0);
+      Debug.Log("Avancee = " + avanceeCount + "nb ingredient = " + activeRecipie.lstIngredients.Count);
+      if (avanceeCount < activeRecipie.lstIngredients.Count)
+      {
+        avancee.transform.localPosition = new Vector3(avancee.transform.localPosition.x + 1, avancee.transform.localPosition.y - 93, 0);
+        avanceeCount++;
+      }
     }
 
     // Update is called once per frame
