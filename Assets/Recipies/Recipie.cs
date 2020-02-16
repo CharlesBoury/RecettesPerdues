@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public enum Bonus{
-  aucun, touille, sel, poivre, mijote
+  aucun, touille, mijotefort, mijotefaible
 };
 
 [System.Serializable]

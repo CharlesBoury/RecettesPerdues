@@ -89,6 +89,9 @@ public class gameState : MonoBehaviour
            if (objSlot.name == objRecipie) {
              match = 1;
            }
+           //if (objSlot.GetComponent<Cookable>().bonus == activeRecipie.lstIngredients[i].bonus) {
+          //   score += 0.05f
+           //}
            score = score + match;
          }
        }
