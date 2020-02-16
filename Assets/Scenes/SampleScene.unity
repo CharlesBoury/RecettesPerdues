@@ -708,6 +708,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 3131678935618047480}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1361087456 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1361087456, guid: 747a815093c0b4aa1a3eb7b7cf23c888,
+    type: 3}
+  m_PrefabInstance: {fileID: 1730074865}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c0a528f127bf34adeab5599a0925d9a9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1384894026
 GameObject:
   m_ObjectHideFlags: 0
@@ -1316,6 +1328,11 @@ PrefabInstance:
       propertyPath: panel
       value: 
       objectReference: {fileID: 1244446516}
+    - target: {fileID: 4627678163257253631, guid: 2b799fe1f8db2d7798f0fcdccefa1761,
+        type: 3}
+      propertyPath: miamometerSlider
+      value: 
+      objectReference: {fileID: 1361087456}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b799fe1f8db2d7798f0fcdccefa1761, type: 3}
 --- !u!1001 &2309475788987149676

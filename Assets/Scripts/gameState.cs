@@ -19,6 +19,7 @@ public class gameState : MonoBehaviour
     public Recipie activeRecipie;
     public GameObject panel;
     public GameObject miamometer;
+    public lerpSlider miamometerSlider;
     public Condiments condiments;
     public Vector3    avanceeOriginPos;
     private int       avanceeCount;
@@ -75,7 +76,8 @@ public class gameState : MonoBehaviour
       ilmanqueqqchose = false;
 
       if (state == State.pregame || state == State.endgame) {
-        miamometer.GetComponent<Canvas>().enabled=false;
+        miamometerSlider.value = 0;
+        miamometer.SetActive(false);
         foreach(GameObject objet in ingredients) {
           GameObject instance = Instantiate(objet);
           instance.transform.parent = ingredientsContainer.transform;
@@ -103,8 +105,8 @@ public class gameState : MonoBehaviour
       Debug.Log ("score : " + score.ToString());
       state = State.endgame;
       DestroyGame();
-      miamometer.GetComponent<Canvas>().enabled=true;
-      miamometer.transform.GetChild(1).GetComponent<Slider>().value = score;
+      miamometer.SetActive(true);
+      miamometerSlider.value = score;
       Button btn = miamometer.transform.GetChild(2).GetComponent<Button>();
   		btn.onClick.AddListener(InitiateGame);
 
