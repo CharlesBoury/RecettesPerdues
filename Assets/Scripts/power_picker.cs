@@ -12,6 +12,7 @@ public class power_picker : MonoBehaviour
 	private Vector3			max;
 	private Vector3			min;
 	private Quaternion		origin_rotation;
+  public GameObject calcifer;
 
 	void	Start()
 	{
@@ -58,6 +59,11 @@ public class power_picker : MonoBehaviour
         		origin.y - Mathf.Cos(Mathf.Abs(transform.localPosition.x - origin.x) * 0.65f) + Mathf.Cos(0), 0);
         	transform.localEulerAngles = new Vector3(0, 0, (transform.localPosition.x - origin.x) * 25);
         	fire_power = (transform.localPosition.x - origin.x) / (max.x - min.x) + 0.5;
+          if (fire_power > 0.7f) {
+            calcifer.GetComponent<Animator>().SetBool("Fort", true);
+          } else {
+            calcifer.GetComponent<Animator>().SetBool("Fort", false);
+          }
 
             //Debug.Log("Puissance: " + fire_power);
         	//Mathf.Clamp(this.gameObject.transform.localPosition.y, this.min.y, this.max.y),
