@@ -29,6 +29,8 @@ public class gameState : MonoBehaviour
     private GameObject mijoteButton;
     private GameObject avancee;
     private GameObject recetteImage;
+    private bool tropSale;
+    private bool ilmanqueqqchose;
 
     // Start is called before the first frame update
     void Start()
@@ -69,6 +71,8 @@ public class gameState : MonoBehaviour
     void InitiateGame()
     {
       condiments.Init();
+      tropSale = false;
+      ilmanqueqqchose = false;
 
       if (state == State.pregame || state == State.endgame) {
         miamometer.GetComponent<Canvas>().enabled=false;
@@ -153,6 +157,7 @@ public class gameState : MonoBehaviour
       if (condiments.miel > 1.0f) condiments.miel = 1.0f;
       if (condiments.soja > 1.0f) condiments.soja = 1.0f;
       if (condiments.coco > 1.0f) condiments.coco = 1.0f;
+      if (condiments.sel > condRef.sel + 0.25) tropSale = true;
       float selDiff = 4.0f * (condRef.sel - condiments.sel) * (condRef.sel - condiments.sel);
       float poivreDiff = Mathf.Abs(condRef.poivre - condiments.poivre);
       float mielDiff = Mathf.Abs(condRef.miel - condiments.miel);

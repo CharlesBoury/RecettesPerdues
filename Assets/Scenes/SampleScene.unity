@@ -488,6 +488,16 @@ PrefabInstance:
       propertyPath: gameState
       value: 
       objectReference: {fileID: 833153564}
+    - target: {fileID: 9094919198631860242, guid: 7831520be0744834a8209acc54ac9ae1,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.29
+      objectReference: {fileID: 0}
+    - target: {fileID: 9094919198631860242, guid: 7831520be0744834a8209acc54ac9ae1,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -6.05
+      objectReference: {fileID: 0}
     - target: {fileID: 9154542532733832965, guid: 7831520be0744834a8209acc54ac9ae1,
         type: 3}
       propertyPath: TriggerModule.enabled
