@@ -170,7 +170,23 @@ public class gameState : MonoBehaviour
 
     public void MenuRecettes() {
       state = State.menurecettes;
+    }
 
+    public BoxCollider2D getCollider() {
+      return casserole.GetComponent<BoxCollider2D>();
+    }
+
+    public void ImpactParticle(string name, int num) {
+      //Debug.Log("name:"+name+num.ToString());
+      switch(name) {
+        case "Sel": condiments.sel += num / 100.0f; break;
+        case "Poivre": condiments.poivre += num / 100.0f; break;
+        case "Miel": condiments.miel += num / 10.0f; break;
+        case "Creme": condiments.creme += num / 10.0f; break;
+        case "Soja": condiments.soja += num / 30.0f; condiments.sel += num / 30.0f; break;
+        case "Huile": condiments.huile += num / 10.0f; break;
+        case "Coco": condiments.coco += num / 10.0f; break;
+      }
     }
 
     public void Touille() {
@@ -183,6 +199,7 @@ public class gameState : MonoBehaviour
     }
 
     public void Mijote() {
+      Debug.Log("sel: "+condiments.sel.ToString()+" poivre: "+condiments.poivre.ToString()+" miel: "+condiments.miel.ToString()+" creme: "+condiments.creme.ToString()+" soja: "+condiments.soja.ToString()+" coco: "+condiments.coco.ToString());
       GameObject latestChild = getLatestLegume();
       if (latestChild != null) {
         if (power_picker.fire_power > 0.7f) {
