@@ -315,7 +315,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TriggerModule.collisionShape0
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1223542489}
     - target: {fileID: 1678241564426638610, guid: 7831520be0744834a8209acc54ac9ae1,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -390,12 +390,7 @@ PrefabInstance:
         type: 3}
       propertyPath: TriggerModule.collisionShape0
       value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 2160912882609024414, guid: 7831520be0744834a8209acc54ac9ae1,
-        type: 3}
-      propertyPath: gameState
-      value: 
-      objectReference: {fileID: 833153564}
+      objectReference: {fileID: 1223542489}
     - target: {fileID: 3945300030951754328, guid: 7831520be0744834a8209acc54ac9ae1,
         type: 3}
       propertyPath: gameState
@@ -405,17 +400,17 @@ PrefabInstance:
         type: 3}
       propertyPath: TriggerModule.collisionShape0
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1223542489}
     - target: {fileID: 7084182615735380963, guid: 7831520be0744834a8209acc54ac9ae1,
         type: 3}
       propertyPath: TriggerModule.collisionShape0
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1223542489}
     - target: {fileID: 7231202809201501493, guid: 7831520be0744834a8209acc54ac9ae1,
         type: 3}
       propertyPath: TriggerModule.collisionShape0
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1223542489}
     - target: {fileID: 7417875915621931410, guid: 7831520be0744834a8209acc54ac9ae1,
         type: 3}
       propertyPath: gameState
@@ -425,45 +420,25 @@ PrefabInstance:
         type: 3}
       propertyPath: TriggerModule.collisionShape0
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1223542489}
     - target: {fileID: 8213663161876988663, guid: 7831520be0744834a8209acc54ac9ae1,
         type: 3}
       propertyPath: gameState
       value: 
       objectReference: {fileID: 833153564}
-    - target: {fileID: 8235889156149143727, guid: 7831520be0744834a8209acc54ac9ae1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: 0.26
-      objectReference: {fileID: 0}
-    - target: {fileID: 8235889156149143727, guid: 7831520be0744834a8209acc54ac9ae1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: -0.56
-      objectReference: {fileID: 0}
-    - target: {fileID: 9094919198631860242, guid: 7831520be0744834a8209acc54ac9ae1,
-        type: 3}
-      propertyPath: m_LocalPosition.y
-      value: 4.29
-      objectReference: {fileID: 0}
-    - target: {fileID: 9094919198631860242, guid: 7831520be0744834a8209acc54ac9ae1,
-        type: 3}
-      propertyPath: m_LocalPosition.x
-      value: -6.05
-      objectReference: {fileID: 0}
-    - target: {fileID: 9154542532733832965, guid: 7831520be0744834a8209acc54ac9ae1,
-        type: 3}
-      propertyPath: TriggerModule.enabled
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 9154542532733832965, guid: 7831520be0744834a8209acc54ac9ae1,
         type: 3}
       propertyPath: TriggerModule.collisionShape0
       value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 2160912882609024414, guid: 7831520be0744834a8209acc54ac9ae1, type: 3}
+      objectReference: {fileID: 1223542489}
+    m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7831520be0744834a8209acc54ac9ae1, type: 3}
+--- !u!4 &1223542489 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 5627721666670515009, guid: 7831520be0744834a8209acc54ac9ae1,
+    type: 3}
+  m_PrefabInstance: {fileID: 1223542488}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1244446516 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 3492204750263966381, guid: 33ccb56fd6a8eaf4cbd76e2905ee022e,
