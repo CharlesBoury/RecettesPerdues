@@ -296,7 +296,6 @@ GameObject:
   - component: {fileID: 2003612883637218460}
   - component: {fileID: 5988313643172048825}
   - component: {fileID: 1192712716819254095}
-  - component: {fileID: 3298773946679434184}
   - component: {fileID: 1850798749}
   m_Layer: 0
   m_Name: Condiment
@@ -378,19 +377,6 @@ CompositeCollider2D:
     m_Paths: []
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
---- !u!114 &3298773946679434184
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5487500015114752984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ab7f3a621e775d409059e413cefc374, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  casserole: {fileID: 0}
 --- !u!95 &1850798749
 Animator:
   serializedVersion: 3
