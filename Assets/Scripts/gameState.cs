@@ -6,7 +6,7 @@ using System.Linq;
 
 
 public enum State{
-  pregame, game, endgame
+  pregame, game, endgame, menurecettes
 };
 
 public class gameState : MonoBehaviour
@@ -15,11 +15,13 @@ public class gameState : MonoBehaviour
     public GameObject ingredientsContainer;
     public GameObject casserole;
     private Transform slots;
+    public List<Recipie> lstRecipies;
     public Recipie activeRecipie;
     public GameObject readyButton;
     public GameObject mijoteButton;
     public GameObject miamometer;
     public GameObject avancee;
+    public Condiments condiments;
 
     public List<GameObject> ingredients;
     // Start is called before the first frame update
@@ -53,6 +55,8 @@ public class gameState : MonoBehaviour
 
     void InitiateGame()
     {
+      condiments.Init();
+
       if (state == State.pregame || state == State.endgame) {
         miamometer.GetComponent<Canvas>().enabled=false;
         foreach(GameObject objet in ingredients) {
@@ -84,6 +88,9 @@ public class gameState : MonoBehaviour
       miamometer.transform.GetChild(1).GetComponent<Slider>().value = score;
       Button btn = miamometer.transform.GetChild(2).GetComponent<Button>();
   		btn.onClick.AddListener(InitiateGame);
+
+      Button btn2 = miamometer.transform.GetChild(3).GetComponent<Button>();
+      btn.onClick.AddListener(MenuRecettes);
   	}
 
     float ComputeScore(){
@@ -116,11 +123,26 @@ public class gameState : MonoBehaviour
        int nbMatch = (ingredientNames.Intersect(recipieNames)).Count();
        scoreMatch =  nbMatch * 1.0f / ingredientNb;
        scoreOrder = scoreOrder / ingredientNb;
-       float score = scoreOrder * 0.4f + scoreMatch * 0.5f + scoreBonus;
+       float scoreCondiments = CondimentScore(activeRecipie.condiments);
+       float score = scoreOrder * 0.3f + scoreMatch * 0.3f + scoreCondiments * 0.4f + scoreBonus;
        if (score > 1.0f) {
          score = 0.0f;
        }
        return score;
+    }
+
+    float CondimentScore(Condiments condRef) {
+      float selDiff = 4.0f * (condRef.sel - condiments.sel) * (condRef.sel - condiments.sel);
+      float poivreDiff = Mathf.Abs(condRef.poivre - condiments.poivre);
+      float mielDiff = Mathf.Abs(condRef.miel - condiments.miel);
+      float sojaDiff = Mathf.Abs(condRef.soja - condiments.soja);
+      float cocoDiff = Mathf.Abs(condRef.coco - condiments.coco);
+      float huileDiff = Mathf.Abs(condRef.huile - condiments.huile);
+      float diff = 1.0f - (selDiff + poivreDiff + mielDiff + sojaDiff + cocoDiff + huileDiff);
+      if (diff < -0.5f) {
+        diff = -0.5f;
+      }
+      return diff;
     }
 
     public GameObject getLatestLegume() {
@@ -129,6 +151,11 @@ public class gameState : MonoBehaviour
         return null;
       }
       return slots.GetChild(nbChild-1).gameObject;
+    }
+
+    public void MenuRecettes() {
+      state = State.menurecettes;
+
     }
 
     public void Touille() {
