@@ -334,6 +334,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   animator: {fileID: 1850798749}
   inCasserole: 0
+  getBackToOrigin: 1
 --- !u!50 &5988313643172048825
 Rigidbody2D:
   serializedVersion: 4
