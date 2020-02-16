@@ -7,6 +7,7 @@ public class Cookable : MonoBehaviour
     public GameObject 	casserole;
     private Transform slots;
     public bool       	inCasserole = false;
+    public GameObject   Draggable;
 
     void Start()
     {
@@ -25,7 +26,7 @@ public class Cookable : MonoBehaviour
                 this.gameObject.transform.parent = slots;
                 this.GetComponent<Collider2D>().enabled = false;
                 inCasserole = true;
-
+                casserole.GetComponent<Casserole>().PlayBloup();
             }
 
         }
