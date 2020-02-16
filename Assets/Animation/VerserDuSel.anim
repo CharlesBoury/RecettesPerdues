@@ -80,9 +80,9 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
+    attribute: EmissionModule.enabled
     path: fx
-    classID: 1
+    classID: 198
     script: {fileID: 0}
   m_PPtrCurves: []
   m_SampleRate: 60
@@ -94,10 +94,10 @@ AnimationClip:
     genericBindings:
     - serializedVersion: 2
       path: 748693456
-      attribute: 2086281974
+      attribute: 1087013301
       script: {fileID: 0}
-      typeID: 1
-      customType: 0
+      typeID: 198
+      customType: 27
       isPPtrCurve: 0
     - serializedVersion: 2
       path: 748693456
@@ -328,9 +328,9 @@ AnimationClip:
       m_PreInfinity: 2
       m_PostInfinity: 2
       m_RotationOrder: 4
-    attribute: m_IsActive
+    attribute: EmissionModule.enabled
     path: fx
-    classID: 1
+    classID: 198
     script: {fileID: 0}
   m_EulerEditorCurves:
   - curve:
