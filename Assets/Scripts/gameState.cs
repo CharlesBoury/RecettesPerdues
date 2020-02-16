@@ -17,6 +17,7 @@ public class gameState : MonoBehaviour
     private Transform slots;
     public Recipie activeRecipie;
     public GameObject readyButton;
+    public GameObject mijoteButton;
     public GameObject miamometer;
     public GameObject avancee;
 
@@ -27,6 +28,10 @@ public class gameState : MonoBehaviour
       state = State.pregame;
       Button btn = readyButton.GetComponent<Button>();
   		btn.onClick.AddListener(Finish);
+
+      Button btn2 = mijoteButton.GetComponent<Button>();
+      btn2.onClick.AddListener(Mijote);
+
       foreach (Transform child in casserole.transform) {
         if (child.name == "Slots") {
           slots = child;
@@ -116,6 +121,36 @@ public class gameState : MonoBehaviour
          score = 0.0f;
        }
        return score;
+    }
+
+    public GameObject getLatestLegume() {
+      int nbChild = slots.childCount;
+      if (nbChild == 0) {
+        return null;
+      }
+      return slots.GetChild(nbChild-1).gameObject;
+    }
+
+    public void Touille() {
+      GameObject latestChild = getLatestLegume();
+      if (latestChild != null) {
+        if (latestChild.GetComponent<Cookable>().bonus == Bonus.aucun) {
+          latestChild.GetComponent<Cookable>().bonus = Bonus.touille;
+        }
+      }
+    }
+
+    public void Mijote() {
+      GameObject latestChild = getLatestLegume();
+      if (latestChild != null) {
+        if (latestChild.GetComponent<Cookable>().bonus != Bonus.mijotefort) {
+          if (power_picker.fire_power > 0.7f) {
+            latestChild.GetComponent<Cookable>().bonus = Bonus.mijotefort;
+          } else {
+            latestChild.GetComponent<Cookable>().bonus = Bonus.mijotefaible;
+          }
+        }
+      }
     }
 
     public void  UpdateAvancee()

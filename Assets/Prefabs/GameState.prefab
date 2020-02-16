@@ -48,7 +48,9 @@ MonoBehaviour:
   casserole: {fileID: 0}
   activeRecipie: {fileID: 0}
   readyButton: {fileID: 0}
+  mijoteButton: {fileID: 0}
   miamometer: {fileID: 0}
+  avancee: {fileID: 0}
   ingredients:
   - {fileID: 9157575678877190539, guid: 8253ae0e1751541e5a54e31d82a9c681, type: 3}
   - {fileID: 4416350617811690716, guid: 8f97aea68e46942c987294430667613d, type: 3}

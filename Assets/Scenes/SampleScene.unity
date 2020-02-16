@@ -282,6 +282,12 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &833153564 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4627678163257253628, guid: 2b799fe1f8db2d7798f0fcdccefa1761,
+    type: 3}
+  m_PrefabInstance: {fileID: 2065923189}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1240674938
 GameObject:
   m_ObjectHideFlags: 0
@@ -984,6 +990,12 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1275858222}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &1835554716 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1427069416450627029, guid: 33ccb56fd6a8eaf4cbd76e2905ee022e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1275858222}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2065923189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1071,6 +1083,11 @@ PrefabInstance:
       propertyPath: readyButton
       value: 
       objectReference: {fileID: 347828568}
+    - target: {fileID: 4627678163257253631, guid: 2b799fe1f8db2d7798f0fcdccefa1761,
+        type: 3}
+      propertyPath: mijoteButton
+      value: 
+      objectReference: {fileID: 1835554716}
     - target: {fileID: 4627678163257253631, guid: 2b799fe1f8db2d7798f0fcdccefa1761,
         type: 3}
       propertyPath: miamometer
@@ -1228,6 +1245,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1813059246, guid: e62183e71a9d53c69a8dd7d15986eb93, type: 3}
+      propertyPath: gameState
+      value: 
+      objectReference: {fileID: 833153564}
     - target: {fileID: 1053791138420359697, guid: e62183e71a9d53c69a8dd7d15986eb93,
         type: 3}
       propertyPath: m_LocalPosition.x

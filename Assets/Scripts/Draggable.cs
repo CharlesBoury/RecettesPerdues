@@ -5,7 +5,7 @@ using UnityEngine;
 public class Draggable : MonoBehaviour
 {
     public Animator     animator;
-	bool                isHeld = false;
+	  bool                isHeld = false;
     public bool         inCasserole = false;
     Vector3             offset;
 
