@@ -29,7 +29,6 @@ public class gameState : MonoBehaviour
     private GameObject readyButton;
     private GameObject mijoteButton;
     private GameObject avancee;
-    private GameObject recetteImage;
     private bool tropSale;
     private bool ilmanqueqqchose;
 
@@ -38,11 +37,13 @@ public class gameState : MonoBehaviour
     {
       state = State.pregame;
       avancee = panel.transform.GetChild(0).gameObject;
-      recetteImage = panel.transform.GetChild(1).gameObject;
       readyButton = panel.transform.GetChild(2).gameObject;
       mijoteButton = panel.transform.GetChild(3).gameObject;
       avanceeOriginPos = avancee.transform.localPosition;
 
+      activeRecipie = lstRecipies[Random.Range(0, lstRecipies.Count)];
+
+      panel.GetComponent<Image>().sprite = activeRecipie.sprite;
 
       Button btn = readyButton.GetComponent<Button>();
   		btn.onClick.AddListener(Finish);
@@ -74,6 +75,7 @@ public class gameState : MonoBehaviour
       condiments.Init();
       tropSale = false;
       ilmanqueqqchose = false;
+      activeRecipie = lstRecipies[Random.Range(0, lstRecipies.Count)];
 
       if (state == State.pregame || state == State.endgame) {
         miamometerSlider.value = 0;
@@ -146,9 +148,9 @@ public class gameState : MonoBehaviour
        scoreMatch =  nbMatch * 1.0f / ingredientNb;
        scoreOrder = scoreOrder / ingredientNb;
        float scoreCondiments = CondimentScore(activeRecipie.condiments);
-       float score = scoreOrder * 0.3f + scoreMatch * 0.3f + scoreCondiments * 0.4f + scoreBonus;
+       float score = scoreOrder * 0.4f + scoreMatch * 0.4f + scoreCondiments * 0.4f + scoreBonus;
        if (score > 1.0f) {
-         score = 0.0f;
+         score = 1.0f;
        }
        return score;
     }
@@ -168,8 +170,8 @@ public class gameState : MonoBehaviour
       float cocoDiff = Mathf.Abs(condRef.coco - condiments.coco);
       float huileDiff = Mathf.Abs(condRef.huile - condiments.huile);
       float diff = 1.0f - (selDiff + poivreDiff + mielDiff + sojaDiff + cocoDiff + huileDiff);
-      if (diff < -0.5f) {
-        diff = -0.5f;
+      if (diff < -0.1f) {
+        diff = -0.1f;
       }
       return diff;
     }

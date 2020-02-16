@@ -46,7 +46,7 @@ public class Recipie : MonoBehaviour
 {
   [Header("Description")]
   public string Title;
-  public string Description;
+  public Sprite sprite;
 
   [Header("Ingredients")]
   public List<IngredientState> lstIngredients = new List<IngredientState> ();
