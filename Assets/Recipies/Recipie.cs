@@ -2,15 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public enum State{
-  normal, brule, touille
+public enum Bonus{
+  aucun, touille, sel, poivre, mijote
 };
 
 [System.Serializable]
 public class IngredientState
 {
     public string ingredient;
-    public State state;
+    public Bonus bonus;
 }
 
 public class Recipie : MonoBehaviour

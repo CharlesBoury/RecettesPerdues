@@ -3,19 +3,25 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+public enum State{
+  pregame, game, endgame
+};
+
 public class gameState : MonoBehaviour
 {
-    public int state;
+    public State state;
     public GameObject ingredientsContainer;
     public GameObject casserole;
     private Transform slots;
     public Recipie activeRecipie;
     public GameObject readyButton;
+    public GameObject miamometer;
 
     public List<GameObject> ingredients;
     // Start is called before the first frame update
     void Start()
     {
+      state = State.pregame;
       Button btn = readyButton.GetComponent<Button>();
   		btn.onClick.AddListener(Finish);
       foreach (Transform child in casserole.transform) {
@@ -39,22 +45,30 @@ public class gameState : MonoBehaviour
 
     void InitiateGame()
     {
-      state = 0;
-      foreach(GameObject objet in ingredients) {
-        GameObject instance = Instantiate(objet);
-        instance.transform.parent = ingredientsContainer.transform;
-        instance.GetComponent<Draggable>().casserole = casserole;
-        instance.GetComponent<Cookable>().casserole = casserole;
-        instance.name = objet.name;
+      if (state == State.pregame || state == State.endgame) {
+        miamometer.GetComponent<Canvas>().enabled=false;
+        foreach(GameObject objet in ingredients) {
+          GameObject instance = Instantiate(objet);
+          instance.transform.parent = ingredientsContainer.transform;
+          instance.GetComponent<Draggable>().casserole = casserole;
+          instance.GetComponent<Cookable>().casserole = casserole;
+          instance.name = objet.name;
+        }
+        state = State.game;
+
       }
     }
 
     void Finish(){
+      float score = ComputeScore();
   		Debug.Log (activeRecipie.Title+"C'est prêt!");
-      Debug.Log ("score : " + ComputeScore().ToString());
-      state = 1;
+      Debug.Log ("score : " + score.ToString());
+      state = State.endgame;
       DestroyGame();
-      InitiateGame();
+      miamometer.GetComponent<Canvas>().enabled=true;
+      miamometer.transform.GetChild(1).GetComponent<Slider>().value = score;
+      Button btn = miamometer.transform.GetChild(2).GetComponent<Button>();
+  		btn.onClick.AddListener(InitiateGame);
   	}
 
     float ComputeScore(){
@@ -72,6 +86,7 @@ public class gameState : MonoBehaviour
            score = score + match;
          }
        }
+       score = 0.05f + score * 0.95f / ingredientNb;
        return score;
     }
 
