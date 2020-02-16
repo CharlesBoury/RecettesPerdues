@@ -5,6 +5,7 @@ using UnityEngine;
 public class chaud : MonoBehaviour
 {
     public Draggable draggable;
+    public AudioClip audioClip;
     // Start is called before the first frame update
     void Start()
     {
