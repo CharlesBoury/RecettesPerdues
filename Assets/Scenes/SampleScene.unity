@@ -978,6 +978,12 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 747a815093c0b4aa1a3eb7b7cf23c888, type: 3}
+--- !u!1 &1759915660 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5397458535716701823, guid: 33ccb56fd6a8eaf4cbd76e2905ee022e,
+    type: 3}
+  m_PrefabInstance: {fileID: 1275858222}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2065923189
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1070,6 +1076,11 @@ PrefabInstance:
       propertyPath: miamometer
       value: 
       objectReference: {fileID: 373871110}
+    - target: {fileID: 4627678163257253631, guid: 2b799fe1f8db2d7798f0fcdccefa1761,
+        type: 3}
+      propertyPath: avancee
+      value: 
+      objectReference: {fileID: 1759915660}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b799fe1f8db2d7798f0fcdccefa1761, type: 3}
 --- !u!1001 &3131678935618047480
@@ -1117,7 +1128,7 @@ PrefabInstance:
     - target: {fileID: 3131678934360793667, guid: 407955d333f0e0a8983280aad0a3baf8,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3131678934360793667, guid: 407955d333f0e0a8983280aad0a3baf8,
         type: 3}
