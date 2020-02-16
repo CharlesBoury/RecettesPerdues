@@ -8,6 +8,13 @@ public class Draggable : MonoBehaviour
 	  bool                isHeld = false;
     public bool         inCasserole = false;
     Vector3             offset;
+    Vector3             initialPosition;
+    public bool         getBackToOrigin = false;
+
+    void Start()
+    {
+      initialPosition = transform.position;
+    }
 
     private Vector3 getWorldMouse()
     {
@@ -33,6 +40,9 @@ public class Draggable : MonoBehaviour
     		    isHeld = false;
             if (animator != null) {
               animator.SetBool("Content", false);
+            }
+            if (getBackToOrigin) {
+              transform.position = initialPosition;
             }
         }
     }
