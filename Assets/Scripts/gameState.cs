@@ -198,7 +198,6 @@ public class gameState : MonoBehaviour
     public void  UpdateAvancee()
     {
       //Debug.Log(panel.recetteImage.GetComponent<RectTransform>().Height.ToString());
-      Debug.Log("Avancee = " + avanceeCount + "nb ingredient = " + activeRecipie.lstIngredients.Count);
       if (avanceeCount < activeRecipie.lstIngredients.Count)
       {
         avancee.transform.localPosition = new Vector3(avancee.transform.localPosition.x + 2, avancee.transform.localPosition.y - 93, 0);
