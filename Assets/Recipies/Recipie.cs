@@ -28,14 +28,17 @@ public class Condiments
   public float huile;
   [Range(0.0f, 1.0f)]
   public float coco;
+  [Range(0.0f, 1.0f)]
+  public float creme;
 
-  public void Init() {
+    public void Init() {
     sel = 0.0f;
     poivre = 0.0f;
     miel = 0.0f;
     soja = 0.0f;
     huile = 0.0f;
     coco = 0.0f;
+    creme = 0.0f;
   }
 }
 
