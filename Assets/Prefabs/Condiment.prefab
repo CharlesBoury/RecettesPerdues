@@ -335,6 +335,7 @@ MonoBehaviour:
   animator: {fileID: 1850798749}
   inCasserole: 0
   getBackToOrigin: 1
+  enable: 1
 --- !u!50 &5988313643172048825
 Rigidbody2D:
   serializedVersion: 4
@@ -408,6 +409,7 @@ GameObject:
   - component: {fileID: 8165937486495052777}
   - component: {fileID: 4413172195435415496}
   - component: {fileID: 4130818095918267348}
+  - component: {fileID: 6163222069996206325}
   m_Layer: 0
   m_Name: fx
   m_TagString: Untagged
@@ -4137,17 +4139,17 @@ ParticleSystem:
     collidesWithDynamic: 1
     interiorCollisions: 0
   TriggerModule:
-    enabled: 0
+    enabled: 1
     collisionShape0: {fileID: 0}
     collisionShape1: {fileID: 0}
     collisionShape2: {fileID: 0}
     collisionShape3: {fileID: 0}
     collisionShape4: {fileID: 0}
     collisionShape5: {fileID: 0}
-    inside: 1
+    inside: 0
     outside: 0
-    enter: 0
-    exit: 0
+    enter: 2
+    exit: 1
     radiusScale: 1
   SubModule:
     serializedVersion: 2
@@ -5151,3 +5153,16 @@ ParticleSystemRenderer:
   m_Mesh2: {fileID: 0}
   m_Mesh3: {fileID: 0}
   m_MaskInteraction: 0
+--- !u!114 &6163222069996206325
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5512051472974758196}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: de7e15c15cb830b19aeef86648418879, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameState: {fileID: 0}

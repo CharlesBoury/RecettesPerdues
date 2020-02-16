@@ -147,6 +147,12 @@ public class gameState : MonoBehaviour
     }
 
     float CondimentScore(Condiments condRef) {
+      if (condiments.sel > 1.0f) condiments.sel = 1.0f;
+      if (condiments.poivre > 1.0f) condiments.poivre = 1.0f;
+      if (condiments.creme > 1.0f) condiments.creme = 1.0f;
+      if (condiments.miel > 1.0f) condiments.miel = 1.0f;
+      if (condiments.soja > 1.0f) condiments.soja = 1.0f;
+      if (condiments.coco > 1.0f) condiments.coco = 1.0f;
       float selDiff = 4.0f * (condRef.sel - condiments.sel) * (condRef.sel - condiments.sel);
       float poivreDiff = Mathf.Abs(condRef.poivre - condiments.poivre);
       float mielDiff = Mathf.Abs(condRef.miel - condiments.miel);
@@ -179,13 +185,13 @@ public class gameState : MonoBehaviour
     public void ImpactParticle(string name, int num) {
       //Debug.Log("name:"+name+num.ToString());
       switch(name) {
-        case "Sel": condiments.sel += num / 100.0f; break;
-        case "Poivre": condiments.poivre += num / 100.0f; break;
-        case "Miel": condiments.miel += num / 10.0f; break;
-        case "Creme": condiments.creme += num / 10.0f; break;
+        case "Sel": condiments.sel += num / 200.0f; break;
+        case "Poivre": condiments.poivre += num / 200.0f; break;
+        case "Miel": condiments.miel += num / 20.0f; break;
+        case "Crème": condiments.creme += num / 20.0f; break;
         case "Soja": condiments.soja += num / 30.0f; condiments.sel += num / 30.0f; break;
         case "Huile": condiments.huile += num / 10.0f; break;
-        case "Coco": condiments.coco += num / 10.0f; break;
+        case "Laitdecoco": condiments.coco += num / 10.0f; break;
       }
     }
 
@@ -199,7 +205,7 @@ public class gameState : MonoBehaviour
     }
 
     public void Mijote() {
-      Debug.Log("sel: "+condiments.sel.ToString()+" poivre: "+condiments.poivre.ToString()+" miel: "+condiments.miel.ToString()+" creme: "+condiments.creme.ToString()+" soja: "+condiments.soja.ToString()+" coco: "+condiments.coco.ToString());
+      //Debug.Log("sel: "+condiments.sel.ToString()+" poivre: "+condiments.poivre.ToString()+" miel: "+condiments.miel.ToString()+" creme: "+condiments.creme.ToString()+" soja: "+condiments.soja.ToString()+" coco: "+condiments.coco.ToString());
       GameObject latestChild = getLatestLegume();
       if (latestChild != null) {
         if (power_picker.fire_power > 0.7f) {
