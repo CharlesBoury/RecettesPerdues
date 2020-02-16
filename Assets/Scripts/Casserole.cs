@@ -4,6 +4,22 @@ using UnityEngine;
 
 public class Casserole : MonoBehaviour
 {
+
+	public List<AudioClip> lstBloupsAudio;
+	AudioSource audioSource;
+
+	void Start() {
+			audioSource = transform.parent.GetComponent<AudioSource>();
+	}
+
+	public void PlayBloup() {
+		if (!audioSource.isPlaying)
+		{
+				audioSource.clip = lstBloupsAudio[Random.Range(0, lstBloupsAudio.Count)];
+				audioSource.Play();
+		}
+	}
+
 	private void OnTriggerEnter2D(Collider2D other) {
 		other.GetComponent<SpriteRenderer>().color = Color.blue;
 	}
