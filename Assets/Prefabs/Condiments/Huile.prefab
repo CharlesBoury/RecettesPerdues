@@ -92,6 +92,21 @@ PrefabInstance:
       propertyPath: SizeModule.curve.maxCurve.m_Curve.Array.data[1].time
       value: 0.56666124
       objectReference: {fileID: 0}
+    - target: {fileID: 4413172195435415496, guid: 4625cf6ce1258784d8e76f09ff5c9770,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.r
+      value: 0.98823535
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413172195435415496, guid: 4625cf6ce1258784d8e76f09ff5c9770,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.g
+      value: 0.67058825
+      objectReference: {fileID: 0}
+    - target: {fileID: 4413172195435415496, guid: 4625cf6ce1258784d8e76f09ff5c9770,
+        type: 3}
+      propertyPath: InitialModule.startColor.maxColor.b
+      value: 0.37647063
+      objectReference: {fileID: 0}
     - target: {fileID: 4689572567004330957, guid: 4625cf6ce1258784d8e76f09ff5c9770,
         type: 3}
       propertyPath: m_LocalScale.x
