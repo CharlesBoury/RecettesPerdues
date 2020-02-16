@@ -119,6 +119,11 @@ PrefabInstance:
       propertyPath: audioClip
       value: 
       objectReference: {fileID: 8300000, guid: 31d916801315f8d678c9523996455a52, type: 3}
+    - target: {fileID: 1190073923526323790, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
+        type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 3462331026679513214, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
         type: 3}
       propertyPath: m_Points.m_Paths.Array.data[0].Array.size
@@ -564,6 +569,16 @@ PrefabInstance:
       propertyPath: m_SpriteTilingProperty.pivot.y
       value: 0.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5411071317007584794, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.45
+      objectReference: {fileID: 0}
+    - target: {fileID: 5411071317007584794, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 1.76
+      objectReference: {fileID: 0}
     - target: {fileID: 6584434507751034113, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
         type: 3}
       propertyPath: m_LocalScale.x
@@ -582,12 +597,12 @@ PrefabInstance:
     - target: {fileID: 6584434507751034113, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -0.23
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6584434507751034113, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -7.68
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7734815591484478632, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
         type: 3}
@@ -1313,12 +1328,12 @@ PrefabInstance:
     - target: {fileID: 8641136475819909448, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -4.16
+      value: -5.282
       objectReference: {fileID: 0}
     - target: {fileID: 8641136475819909448, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.8
+      value: 2.719
       objectReference: {fileID: 0}
     - target: {fileID: 8641136475819909448, guid: 148a245e6a2344d00a9a8ce8e4db1eca,
         type: 3}
