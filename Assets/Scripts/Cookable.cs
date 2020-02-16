@@ -9,6 +9,7 @@ public class Cookable : MonoBehaviour
     public bool       	inCasserole = false;
     public GameObject   Draggable;
     public Bonus bonus;
+    public GameObject   gameState;
 
     void Start()
     {
@@ -29,6 +30,7 @@ public class Cookable : MonoBehaviour
                 this.GetComponent<Collider2D>().enabled = false;
                 inCasserole = true;
                 casserole.GetComponent<Casserole>().PlayBloup();
+                gameState.GetComponent<gameState>().UpdateAvancee();
             }
 
         }

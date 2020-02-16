@@ -18,6 +18,7 @@ public class gameState : MonoBehaviour
     public Recipie activeRecipie;
     public GameObject readyButton;
     public GameObject miamometer;
+    public GameObject avancee;
 
     public List<GameObject> ingredients;
     // Start is called before the first frame update
@@ -59,6 +60,7 @@ public class gameState : MonoBehaviour
           Cookable ck = instance.GetComponent<Cookable>();
           if (ck != null) {
             ck.casserole = casserole;
+            ck.gameState = gameObject;
           }
           instance.name = objet.name;
         }
@@ -114,6 +116,11 @@ public class gameState : MonoBehaviour
          score = 0.0f;
        }
        return score;
+    }
+
+    public void  UpdateAvancee()
+    {
+      avancee.transform.localPosition = new Vector3(avancee.transform.localPosition.x, avancee.transform.localPosition.y - 20, 0);
     }
 
     // Update is called once per frame
