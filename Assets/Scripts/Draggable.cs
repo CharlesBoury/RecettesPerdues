@@ -23,14 +23,17 @@ public class Draggable : MonoBehaviour
             Vector3 mouseWorldPos = getWorldMouse();
     		    isHeld = true;
             offset = this.gameObject.transform.localPosition - mouseWorldPos;
-            animator.SetBool("Content", true);
+            if (animator != null) {
+              animator.SetBool("Content", true);
+            }
         }
     }
     private void OnMouseUp() {
     	if (Input.GetMouseButtonUp(0)) {
     		    isHeld = false;
-            animator.SetBool("Content", false);
-    
+            if (animator != null) {
+              animator.SetBool("Content", false);
+            }
         }
     }
 

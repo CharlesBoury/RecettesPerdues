@@ -50,7 +50,14 @@ public class gameState : MonoBehaviour
         foreach(GameObject objet in ingredients) {
           GameObject instance = Instantiate(objet);
           instance.transform.parent = ingredientsContainer.transform;
-          instance.GetComponent<Cookable>().casserole = casserole;
+          ClampToAir cl = instance.GetComponent<ClampToAir>();
+          if (cl != null) {
+            cl.casserole = casserole;
+          }
+          Cookable ck = instance.GetComponent<Cookable>();
+          if (ck != null) {
+            ck.casserole = casserole;
+          }
           instance.name = objet.name;
         }
         state = State.game;
