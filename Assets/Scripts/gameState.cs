@@ -185,6 +185,9 @@ public class gameState : MonoBehaviour
     public void Mijote() {
       GameObject latestChild = getLatestLegume();
       if (latestChild != null) {
+        if (power_picker.fire_power > 0.7f) {
+          latestChild.GetComponent<chaud>().PlaySound();
+        }
         if (latestChild.GetComponent<Cookable>().bonus != Bonus.mijotefort) {
           if (power_picker.fire_power > 0.7f) {
             latestChild.GetComponent<Cookable>().bonus = Bonus.mijotefort;
