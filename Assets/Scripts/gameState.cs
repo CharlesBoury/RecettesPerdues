@@ -17,17 +17,27 @@ public class gameState : MonoBehaviour
     private Transform slots;
     public List<Recipie> lstRecipies;
     public Recipie activeRecipie;
-    public GameObject readyButton;
-    public GameObject mijoteButton;
+    public GameObject panel;
     public GameObject miamometer;
-    public GameObject avancee;
     public Condiments condiments;
 
     public List<GameObject> ingredients;
+
+    private GameObject readyButton;
+    private GameObject mijoteButton;
+    private GameObject avancee;
+    private GameObject recetteImage;
+
     // Start is called before the first frame update
     void Start()
     {
       state = State.pregame;
+      avancee = panel.transform.GetChild(0).gameObject;
+      recetteImage = panel.transform.GetChild(1).gameObject;
+      readyButton = panel.transform.GetChild(2).gameObject;
+      mijoteButton = panel.transform.GetChild(3).gameObject;
+
+
       Button btn = readyButton.GetComponent<Button>();
   		btn.onClick.AddListener(Finish);
 
@@ -182,7 +192,9 @@ public class gameState : MonoBehaviour
 
     public void  UpdateAvancee()
     {
-      avancee.transform.localPosition = new Vector3(avancee.transform.localPosition.x, avancee.transform.localPosition.y - 20, 0);
+      //Debug.Log(panel.recetteImage.GetComponent<RectTransform>().Height.ToString());
+
+      avancee.transform.localPosition = new Vector3(avancee.transform.localPosition.x, avancee.transform.localPosition.y - 50, 0);
     }
 
     // Update is called once per frame
