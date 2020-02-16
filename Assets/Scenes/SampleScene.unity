@@ -1276,6 +1276,21 @@ PrefabInstance:
       propertyPath: miamometerSlider
       value: 
       objectReference: {fileID: 1361087456}
+    - target: {fileID: 4627678163257253631, guid: 2b799fe1f8db2d7798f0fcdccefa1761,
+        type: 3}
+      propertyPath: lstRecipies.Array.data[0]
+      value: 
+      objectReference: {fileID: 1689216159}
+    - target: {fileID: 4627678163257253631, guid: 2b799fe1f8db2d7798f0fcdccefa1761,
+        type: 3}
+      propertyPath: lstRecipies.Array.data[1]
+      value: 
+      objectReference: {fileID: 3131678935618047482}
+    - target: {fileID: 4627678163257253631, guid: 2b799fe1f8db2d7798f0fcdccefa1761,
+        type: 3}
+      propertyPath: lstRecipies.Array.data[2]
+      value: 
+      objectReference: {fileID: 3131678935618047481}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b799fe1f8db2d7798f0fcdccefa1761, type: 3}
 --- !u!1001 &2309475788987149676
@@ -1370,6 +1385,11 @@ PrefabInstance:
       propertyPath: lstIngredients.Array.data[5].bonus
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 479869340, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 9ecf930e25bda4db59cd8b6e22cb6f62,
+        type: 3}
     - target: {fileID: 824975561, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
       propertyPath: lstIngredients.Array.data[6].ingredient
       value: Carotte
@@ -1378,6 +1398,11 @@ PrefabInstance:
       propertyPath: lstIngredients.Array.data[6].bonus
       value: 3
       objectReference: {fileID: 0}
+    - target: {fileID: 824975561, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: aa5f559a427594cb9bffd0f331d3db2a,
+        type: 3}
     - target: {fileID: 3131678934360793667, guid: 407955d333f0e0a8983280aad0a3baf8,
         type: 3}
       propertyPath: m_LocalPosition.x
@@ -1438,8 +1463,41 @@ PrefabInstance:
       propertyPath: m_Name
       value: ListeRecettes
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 3131678935024740711, guid: 407955d333f0e0a8983280aad0a3baf8,
+        type: 3}
+      propertyPath: sprite
+      value: 
+      objectReference: {fileID: 21300000, guid: 68506f1574a9a4e4c8b2f9a705ea4a36,
+        type: 3}
+    m_RemovedComponents:
+    - {fileID: 6767461435433927835, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+    - {fileID: 5529937201809712110, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+    - {fileID: 1825396449904472029, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: 407955d333f0e0a8983280aad0a3baf8, type: 3}
+--- !u!114 &3131678935618047481 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 824975561, guid: 407955d333f0e0a8983280aad0a3baf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3131678935618047480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f355138b52c09a909b249346f5e0211c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &3131678935618047482 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 479869340, guid: 407955d333f0e0a8983280aad0a3baf8,
+    type: 3}
+  m_PrefabInstance: {fileID: 3131678935618047480}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f355138b52c09a909b249346f5e0211c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3695066013840849965
 PrefabInstance:
   m_ObjectHideFlags: 0

@@ -76,17 +76,13 @@ public class gameState : MonoBehaviour
       tropSale = false;
       ilmanqueqqchose = false;
       activeRecipie = lstRecipies[Random.Range(0, lstRecipies.Count)];
-
+      
       if (state == State.pregame || state == State.endgame) {
         miamometerSlider.value = 0;
         miamometer.SetActive(false);
         foreach(GameObject objet in ingredients) {
           GameObject instance = Instantiate(objet);
           instance.transform.parent = ingredientsContainer.transform;
-          /*ClampToAir cl = instance.GetComponent<ClampToAir>();
-          if (cl != null) {
-            cl.casserole = casserole;
-          }*/
           Cookable ck = instance.GetComponent<Cookable>();
           if (ck != null) {
             ck.casserole = casserole;
@@ -104,7 +100,6 @@ public class gameState : MonoBehaviour
     void Finish(){
       float score = ComputeScore();
   		Debug.Log (activeRecipie.Title+"C'est prêt!");
-      Debug.Log ("score : " + score.ToString());
       state = State.endgame;
       DestroyGame();
       miamometer.SetActive(true);
@@ -114,7 +109,7 @@ public class gameState : MonoBehaviour
   		btn.onClick.AddListener(InitiateGame);
 
       Button btn2 = miamometer.transform.GetChild(3).GetComponent<Button>();
-      btn.onClick.AddListener(MenuRecettes);
+      btn2.onClick.AddListener(MenuRecettes);
   	}
 
     float ComputeScore(){
@@ -128,6 +123,7 @@ public class gameState : MonoBehaviour
       for (int i = 0; i < ingredientNb; ++i) {
          int match = 0;
          string objRecipie = activeRecipie.lstIngredients[i].ingredient;
+         Debug.Log("ingredients" + i.ToString() + " " + objRecipie);
          if (i < childrenNb) {
            GameObject objSlot = slots.GetChild(i).gameObject;
            // Check exact matching
@@ -152,6 +148,10 @@ public class gameState : MonoBehaviour
        if (score > 1.0f) {
          score = 1.0f;
        }
+       if (score < 0.1f) {
+         score = 0.1f;
+       }
+       Debug.Log ("score order: " + scoreOrder.ToString() + " match: "+ scoreMatch.ToString() + " condiments: "+ scoreCondiments.ToString() + " bonus: "+ scoreBonus.ToString() + " Total: " + score.ToString());
        return score;
     }
 
