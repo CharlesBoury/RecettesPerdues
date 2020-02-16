@@ -277,6 +277,7 @@ GameObject:
   - component: {fileID: 5287550621384427608}
   - component: {fileID: 4223086926401600498}
   - component: {fileID: 1770007132712467141}
+  - component: {fileID: -3471587032691341606}
   m_Layer: 0
   m_Name: Ingredient
   m_TagString: Untagged
@@ -313,7 +314,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 6481637371966760589}
-  casserole: {fileID: 0}
   inCasserole: 0
 --- !u!95 &6481637371966760589
 Animator:
@@ -404,3 +404,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   casserole: {fileID: 0}
   inCasserole: 0
+--- !u!114 &-3471587032691341606
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8641136475819909449}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 441f7f819e86180649cf2de4dade68a6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  audioSource: {fileID: 0}
