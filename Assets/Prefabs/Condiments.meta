@@ -1,5 +1,10 @@
 fileFormatVersion: 2
-guid: 418a66434c29ffb4094c7ce06992f75d
+<<<<<<<< HEAD:Assets/Prefabs/Condiments.meta
+guid: a27e24bdd483ed14880946d55af24c4c
+========
+guid: b432e7920ad974bb1b83331743675b3a
+
+>>>>>>>> ingredients + condiments:Assets/Prefabs/Ingrdients.meta
 folderAsset: yes
 DefaultImporter:
   externalObjects: {}
