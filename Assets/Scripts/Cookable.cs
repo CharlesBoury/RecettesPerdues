@@ -8,9 +8,11 @@ public class Cookable : MonoBehaviour
     private Transform slots;
     public bool       	inCasserole = false;
     public GameObject   Draggable;
+    public Bonus bonus;
 
     void Start()
     {
+      bonus = Bonus.aucun;
       foreach (Transform child in casserole.transform) {
         if (child.name == "Slots") {
           slots = child;
